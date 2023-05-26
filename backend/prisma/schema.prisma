@@ -9,3 +9,12 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Video {
+  id            Int      @id @default(autoincrement())
+  createdAt     DateTime @default(now())
+  title         String   @db.VarChar(150)
+  startDateTime DateTime
+  postalCode    String   @db.VarChar(10)
+  fileName      String   @unique
+}
