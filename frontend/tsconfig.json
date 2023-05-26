@@ -5,7 +5,7 @@
     "jsx": "react" /* Specify what JSX code is generated. */,
 
     /* Modules */
-    "module": "es6" /* Specify what module code is generated. */,
+    "module": "nodenext" /* Specify what module code is generated. */,
 
     /* Emit */
     "outDir": "./dist" /* Specify an output folder for all emitted files. */,
